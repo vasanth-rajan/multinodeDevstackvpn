@@ -401,6 +401,7 @@ r"""
         else:
             return 0
 
+"""
 
 
 
@@ -476,17 +477,6 @@ vpnServiceId1 = router_Create.vpnServiceCreate("vpnEastEnd", routerId1, subnetId
 print vpnServiceId1
 vpnServiceId2 = router_Create.vpnServiceCreate("vpnWestEnd", routerId2, subnetId2)
 print vpnServiceId2
-"""
-
-
-baseUrl = "http://172.16.7.45"
-tokenGen = httpFunc(baseUrl)
-payload= {"auth": {"tenantName": "admin", "passwordCredentials": {"username": "admin", "password": "password"}}}
-token = tokenGen.createToken(payload)
-print token
-
-
-router_Create = routerCreate(baseUrl, token)
 
 eastPeerIp = "172.16.7.202" 
 westPeerIp = "172.16.7.201"
