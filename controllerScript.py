@@ -35,7 +35,7 @@ contentLine[occuredLine2] = "SERVICE_HOST=%s" %controllerIp
 
 newContent = "\n".join(contentLine)
 
-os.rename(controllerConf, "tmp.conf")
+os.rename(controllerConf, ".tmp.conf")
 
 fo = open(controllerConf, "w")
 fo.write(newContent)

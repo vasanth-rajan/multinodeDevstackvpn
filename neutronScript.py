@@ -34,7 +34,7 @@ contentLine[occuredLine1] = "HOST_IP=%s" %neutronHost
 contentLine[occuredLine2] = "SERVICE_HOST=%s" %controllerIp
 newContent = "\n".join(contentLine)
 
-os.rename(neutronConf, "tmp.conf")
+os.rename(neutronConf, ".tmp.conf")
 fo = open(neutronConf, "w")
 fo.write(newContent)
 fo.close()

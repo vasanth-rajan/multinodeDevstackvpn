@@ -17,3 +17,7 @@ def copyLocal(user, fileName):
 def devstackStart():
     run('./devstack/stack.sh')
 
+def devstackEnd():
+    run('./devstack/unstack.sh')
+    run('screen -wipe')
+

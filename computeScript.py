@@ -34,7 +34,7 @@ contentLine[occuredLine1] = "HOST_IP=%s" %computeHost
 contentLine[occuredLine2] = "SERVICE_HOST=%s" %controllerIp
 newContent = "\n".join(contentLine)
 #print newContent
-os.rename(computeConf, "tmp.conf")
+os.rename(computeConf, ".tmp.conf")
 
 fo = open(computeConf, "w")
 fo.write(newContent)
