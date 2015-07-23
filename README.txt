@@ -2,7 +2,7 @@ Pre-requistes
 #############
 
 Create a user 'stack' in all the machines
-Assign IP address as password  for created user 'stack'
+Assign password as password  for created user 'stack'
 
 Linux Command for creating a User in linux
 ==========================================
