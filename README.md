@@ -7,6 +7,6 @@ Assign password as password  for created user 'stack'
 Linux Command for creating a User in linux
 ==========================================
 adduser stack 
-echo "stack ALL=(ALL) NOPASSWD: ALL" » /etc/sudoers 
+echo "stack ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers 
 exit 
 
